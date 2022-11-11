@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <div class="grid grid-cols-2 gap-10">
+    <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2">
       <div class="p-7">
         <img :src="product.image" alt="Product" class="mx-auto my-7" />
       </div>
@@ -20,6 +20,6 @@ const { product } = defineProps(["product"]);
 
 <style scoped>
 img {
-  max-width: 400px;
+  max-width: 80%;
 }
 </style>
